@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia's Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://logos.textgiraffe.com/logos/logo-name/Sophia-designstyle-chocolate-m.png" class ="logo"/>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"> 
+                <h1>I am Sopheavatey Sin</h1>
+                <p>Front-End Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Profile.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am interested in Web development jobs and I start taking an online course at Generation USA for a junior web development. So far, I've learnt about the concept of web development, command lines programs (codecademy), Git and Github. What is more, skillsets are important tools for web development but behavioral skills mindset is also a key tool to keep going with this course. I would love to learn more how to code.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>CSS, HTML,JavaScript</li>
+                        <li><span>Grow Mindset & behavioral Skills</span><br>Persistence, Future Orientation, Communication</li>
+                        <li><span>Other skills</span><br>Command Line, Git & Github, Web interactivity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - Present</span><br>Calibration Technician at Spectro Scientific</li>
+                        <li><span>2018 - 2020</span><br>AssemblerIII at API Tech</li>
+                        <li><span>2017 - 2018</span><br>Assembler II at NEO Tech</li>
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Web Development from Generation </li>
+                        <li><span>2017</span><br>PLS Technical Training School </li>
+                        <li><span>2014-2016</span><br>BA from Build Bright University </li>
+                        <li><span>2012-2014</span><br>AS from National University of Management</li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>sinsopheavatey@yahoo.com</p>
+                <p>978-883-8888</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/sophiasin9"><i class="fa-regular fa-envelope"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
