@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophia's Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="https://logos.textgiraffe.com/logos/logo-name/Sophia-designstyle-chocolate-m.png" class ="logo"/>
+                <img src="https://logos.textgiraffe.com/logos/logo-name/Sophia-designstyle-autumn-l.png" class="logo" />
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills-list">Skills</a></li>
+                    <li><a href="#skills-list">Experience</a></li>
+                    <li><a href="#skills-list">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text"> 
-                <h1>I am Sopheavatey Sin</h1>
-                <p>Front-End Web Developer</p>
+            <div class="row">
+                <div class="home-col-1">
+                    <div class="header-text">
+                        <h1>I am <span>Sopheavatey</span> Sin</h1>
+                        <p>
+                            <marquee behavior="scroll" direction="down" scrollamount="1">Front-End Web Developer
+                            </marquee>
+                        </p>
+                    </div>
+                </div>
+                <div class="home-col-2">
+                    <img src="./images/home.png">
+                </div>
             </div>
         </div>
     </div>
@@ -34,65 +47,125 @@
                     <img src="./images/Profile.jpeg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am interested in Web development jobs and I start taking an online course at Generation USA for a junior web development. So far, I've learnt about the concept of web development, command lines programs (codecademy), Git and Github. What is more, skillsets are important tools for web development but behavioral skills mindset is also a key tool to keep going with this course. I would love to learn more how to code.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Web development</span><br>CSS, HTML,JavaScript</li>
-                        <li><span>Grow Mindset & behavioral Skills</span><br>Persistence, Future Orientation, Communication</li>
-                        <li><span>Other skills</span><br>Command Line, Git & Github, Web interactivity</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2020 - Present</span><br>Calibration Technician at Spectro Scientific</li>
-                        <li><span>2018 - 2020</span><br>AssemblerIII at API Tech</li>
-                        <li><span>2017 - 2018</span><br>Assembler II at NEO Tech</li>
-                    </ul> 
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2022</span><br>Web Development from Generation </li>
-                        <li><span>2017</span><br>PLS Technical Training School </li>
-                        <li><span>2014-2016</span><br>BA from Build Bright University </li>
-                        <li><span>2012-2014</span><br>AS from National University of Management</li>
-                        
-                    </ul>
-                </div>
+                    <h1 class="sub-title">
+                        <marquee behavior="scroll" direction="up" scrollamount="4">About Me</marquee>
+                    </h1>
+                    <p>Highly committed and fast learner who freshly graduated in the web development course,
+                        knowledgeably in web and supporting skills including but not limited to,<span>HTML, CSS,
+                            JavaScript, Growth Mindsets</span> to contribute in the tech industry. Started a career in a
+                        technology company as a technician who always wonder about how the technology has developed in a
+                        modern world, seeking for a career change opportunity and turn myself to engage in a
+                        professional position as a <span>Web Developer</span>.</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ------------- -Skills, Experience & Education------------- -->
+    <div id="skills-list">
+        <div class="container">
+            <div class="tab-titles">
+                <div class="row">
+                    <div class="skills-col-1">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="experience-col-2">
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="education-col-3">
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Web development</span><br>HTML, CSS, JavaScript <br>Command Line, Git & Github
+                </li>
+                <li><span>Grow Mindset & behavioral Skills</span><br>Persistence, Future Orientation,
+                    Orientation to Detail <br> Proactiveness, Personal Responsibility<br>Problem-Solving,
+                    Team Work</li>
+                <li><span>Other Related Skills</span><br>Bootstrap,Flexbox, Mocha Framework <br> Web
+                    interactivity, Design & Accessibility, Node.js<br> Scrum Methodology, Agile Software
+                    Development <br>Test Driven Development, Unit Testing</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2020 - Present</span><br>Calibration Technician at Spectro Scientific</li>
+                <li><span>2018 - 2020</span><br>AssemblerIII at API Tech</li>
+                <li><span>2017 - 2018</span><br>Assembler II at NEO Tech</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2022</span><br>Web Development from Generation </li>
+                <li><span>2017</span><br>PLS Technical Training School </li>
+                <li><span>2014-2016</span><br>BA from Build Bright University </li>
+                <li><span>2012-2014</span><br>AS from National University of Management</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+
+
     <!-- -------------contact--------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>sinsopheavatey@yahoo.com</p>
-                <p>978-883-8888</p>
-                <div class="social-icons">
-                    <a href="www.linkedin.com/in/sophiasin9"><i class="fa-regular fa-envelope"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">
+                        <i>Contact Me</i>
+                    </h1>
+                    <p><img src="https://cdn.icon-icons.com/icons2/70/PNG/512/yahoo_14187.png" alt="yahoo icon">
+                        sinsopheavatey@yahoo.com</p>
+                    <p><img src="https://cdn.icon-icons.com/icons2/41/PNG/128/Viber_phone_call_telephone_6628.png"
+                            alt="phone icon"> 978-883-8888</p>
+                    <div class="social-icons">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="#"><img
+                                            src="https://cdn.icon-icons.com/icons2/555/PNG/96/facebook_icon-icons.com_53612.png"
+                                            alt="facebook icon"></a>
+                                    <a href="#"><img
+                                            src="https://cdn.icon-icons.com/icons2/1753/PNG/96/iconfinder-social-media-applications-3instagram-4102579_113804.png"
+                                            alt="instagram icon"></a>
+                                    <a href="#"><img
+                                            src="https://cdn.icon-icons.com/icons2/1211/PNG/96/1491579583-yumminkysocialmedia02_83111.png"
+                                            alt="twitter icon"></a>
+                                    <a href="https://www.linkedin.com/in/sophiasin9/" target="_blank"><img
+                                            src="https://cdn.icon-icons.com/icons2/31/PNG/96/sociallinkedin_member_2751.png"
+                                            alt="linkedin icon"></a>
+                                    <a href="https://github.com/sopheavateysin" target="_blank"><img
+                                            src="https://cdn.icon-icons.com/icons2/2415/PNG/96/github_original_wordmark_logo_icon_146506.png"
+                                            alt="github icon"></a>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+
                 </div>
             </div>
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright, made by Sopheavatey Sin <img
+                    src="https://cdn.icon-icons.com/icons2/2656/PNG/512/smile_emo_emoticon_face_emoji_icon_161036.png"
+                    alt="smile face"></p>
         </div>
     </div>
-</div>
 
     <script src="./script.js"></script>
 </body>
+
 </html>

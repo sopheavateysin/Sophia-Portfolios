@@ -6,17 +6,18 @@
 }
 
 body {
-    background: rgb(188, 216, 227);
-    color: #fff;
+    background: #fff;
+    color: #262626;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(https://bluerock.marketing/wp-content/uploads/2018/01/AdobeStock_115404083-1024x640.jpeg);
+    background-image: url(https://i1.wp.com/lognova.com/wp-content/uploads/2018/08/web-development-header3.jpg?fit=3840%2C1500&ssl=1);
     background-size: cover;
     background-position: center;
 }
+
 .container{
     padding: 10px 10%;
 }
@@ -29,6 +30,10 @@ nav{
 
 .logo{
     width: 150px;
+    transition: transform 0.5s;
+}
+.logo:hover{
+    transform: translateY(-10px);
 }
 
 nav ul li {
@@ -38,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #262626;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -47,7 +52,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ba0707;
+    background: rgb(216, 72, 216);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -56,18 +61,43 @@ nav ul li a::after {
 nav ul li a:hover::after{
     width: 100%;
 }
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.home-col-1{
+    flex-basis: 60%;
+}
 .header-text{
     margin-top: 20%;
     font-size: 30px;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
+}
+.header-text h1 span {
+    color: rgb(216, 72, 216);
+}
+.header-text p{
+    color: rgb(208, 26, 208);
+    font-size: 30px;
+}
+.home-col-2 {
+    flex-basis: 35%;
+}
+.home-col-2 img{
+    width: 100%;  
+}
+.home-col-2 img:hover{
+    transform: translateY(-20px);
 }
 /* ------------About----------- */
 #about{
     padding: 80px 0;
-    color: #0c0f7c;
+    color: #262626;
+    font-size: 20px;
 }
 .row{
     display:flex;
@@ -79,37 +109,74 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: plum;
+    border-width: 15px;
 }
 .about-col-2{
     flex-basis: 60%;
-
 }
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(25, 11, 182);
+    color: rgb(216, 72, 216);
 }
 p{
     font-size: 20px;
     padding: 10px;
 }
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
+.about-col-2 p span{
+    color: rgb(216, 72, 216);
+    font-weight: bolder;
 }
+/* --------------Skills, Experience & Education------------ */
+#skills-list{
+    padding: 30px;
+    color: #262626;
+    font-size: 20px;
+    background-image: url(https://styledme.com/wp-content/uploads/2021/01/brick-wall-zoom-virtual-backgrounds-realistic-office-white-background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    margin: 10px 30px;
+}
+
+.skills-col-1 {
+    flex-basis: 30%;
+}
+.experience-col-2 {
+    flex-basis: 40%;
+}
+.education-col-3{
+    flex-basis: 30%;
+}
+
 .tab-links{
     margin-right: 50px;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     position: relative;
     font-weight: 600;
 }
+
+.tab-links:hover{
+    transform: translateY(-10px);
+    color: rgb(216, 72, 216);
+}
+
 .tab-links::after{
     content:'';
     width: 0;
     height: 5px;
-    background: #0c0f7c;
+    background: plum;
     position: absolute;
     left: 0;
     bottom: -2px;
@@ -117,15 +184,23 @@ p{
 }
 .tab-links.active-link::after{
     width: 50%;
+    
 }
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    margin-bottom: 35px;
 }
 .tab-contents ul li span{
-    color:#0c0f7c;
-    font-size: 20px;
+    color: rgb(216, 72, 216);
+    font-size: 25px;
     font-weight: 600;
+    
+}
+
+.tab-contents ul li span::before{
+    content: '\2713\0020';
+    
 }
 .tab-contents{
     display: none;
@@ -133,7 +208,11 @@ p{
 .tab-contents.active-tab{
     display: block;
 }
+
 /* --------------contact---------- */
+#contact{
+    margin-top: 30px;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -141,8 +220,75 @@ p{
     flex-basis: 60%;
 }
 p{
-    color:rgb(25, 11, 182)
+    color:#262626
 }
 .contact-left p{
     margin-top: 30px;
+}
+.contact-left p img{
+    width: 30px;
+}
+.contact-left p i{
+    color: plum;
+    margin-right: 30px;
+    font-size: 25px;
+    
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons img {
+    width: 10%;
+    text-decoration: none;
+    font-size: 10px;
+    margin-right: 15px;
+    color: plum;
+    display: inline-block;
+}
+.social-icons img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.btn.btn2{
+    display: inline-block;
+    background: plum;
+    color: #262626;
+    font-weight: bolder;
+}
+.contact-right form{
+    width: 100%;
+    
+} 
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: plum;
+    padding: 15px;
+    margin: 15px 0;
+    color: #262626;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: plum;
+
+}
+.copyright p{
+    color: #262626;
+}
+.copyright img{
+    width: 2%;
 }
