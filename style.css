@@ -98,6 +98,7 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #262626;
     font-size: 20px;
+    height: 100vh;
 }
 .row{
     display:flex;
@@ -130,6 +131,57 @@ p{
     color: rgb(216, 72, 216);
     font-weight: bolder;
 }
+
+/* ------------------Projects---------------- */
+
+#projects {
+    padding: 30px 0;
+    height: 100vh;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list div {
+    background-color: rgb(235, 214, 235);
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.project-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.project-list div h2 {
+
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+.project-list div a {
+    text-decoration: none;
+    color: rgb(255, 23, 255);
+    font-size: 13px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover {
+    background: plum;
+    transform: translateY(-10px);
+}
+.project-list div ul li {
+    font-size: 18px;
+}
+
+
+.project-list div ul li a span {
+    color:rgb(208, 26, 208);
+}
+
 /* --------------Skills, Experience & Education------------ */
 #skills-list{
     padding: 30px;
@@ -238,7 +290,7 @@ p{
     margin-top: 30px;
 }
 .social-icons img {
-    width: 10%;
+    width: 20%;
     text-decoration: none;
     font-size: 10px;
     margin-right: 15px;
